@@ -1,0 +1,30 @@
+stdout  = standard output
+stderr  = standard error
+stdin = standard input
+
+<command> > <filename> - replaces everything
+<command> >> <filename>  - appends to file
+
+<command> < <filename>  - input for command
+
+<command> >> <filename1> >> <filename2> reads filename1 and outputs to filename2
+
+
+cat
+
+wc - word count
+-l = lines
+-m = characters
+-w = words
+
+grep
+grep [OPTION...] PATTERNS [FILE...]
+--color - to highlight the word in color
+-n - line number
+-o - only matching - only prints the matching word with each part on a seperate output line
+
+sd
+sed
+sed 's/<pattern_1>/<replacement_1>/; s/<pattern_2>/<replacement_2>/'
+-E - extend regular expression (need for ands/ors in the search)
+/s/<text to replace>/<replacement text>/'
